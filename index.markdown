@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Profile
+title: Home
 ---
 <h1>Hi, I’m Geerthika Senthil</h1>
 
