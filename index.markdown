@@ -5,6 +5,16 @@
 layout: home
 title: Home
 ---
+  <div class="welcome" id="welcome">
+    <div class="welcome-contents">
+        <p class="hello">Hello, I'm</p>
+        <p class="popout">
+            <span>Geerthika</span>
+            <span>Senthil</span>
+        </p> 
+    </div>
+</div>
+
 <h1>Hi, I’m Geerthika Senthil</h1>
 
 
