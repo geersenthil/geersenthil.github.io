@@ -2,8 +2,8 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: page
-title: Projects
+layout: home
+title: Home
 ---
 <h1>Hi, I’m Geerthika Senthil</h1>
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Projects
+permalink: /projects/
 ---
 
 <h1> Under construction at the moment</h1>
