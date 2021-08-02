@@ -12,14 +12,3 @@ Python for Data Processing & Analysis
 Java for Object Oriented Programming
 I’m currently delving into machine learning concepts like natural language processing.
 How to reach me gsenthil@uwaterloo.ca
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
