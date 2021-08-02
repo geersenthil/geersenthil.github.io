@@ -8,7 +8,7 @@ title: Home
 
 
 <h1>Hi, I’m Geerthika Senthil</h1>
-<div><im>img src="img\Profile_pic.jpg">  </div>
+<div><img src="img\Profile_pic.jpg">  </div>
 I’m interested in software development and data engineering. 
 I have practical experience in both fields at companies like the Ministry of Attorney General and PepsiCo, where I worked in data science roles. 
 My Preferred Languages are:
