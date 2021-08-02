@@ -5,4 +5,4 @@
 layout: home
 title: Profile
 ---
-Hi, I’m Geerthika Senthil
+<h1>Hi, I’m Geerthika Senthil</h1>
