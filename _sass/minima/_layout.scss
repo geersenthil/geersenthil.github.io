@@ -256,7 +256,7 @@
   /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 33.33%;
+  width: 48%;
   padding: 5px;
 }
 
@@ -271,6 +271,8 @@
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  height: 450px;
+  
 }
 
 /* On mouse-over, add a deeper shadow */
