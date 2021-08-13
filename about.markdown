@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-<h1> Here is a list of some of my recent projects:</h1>
+<h1> Here is a list of my recent projects:</h1>
 
 <div class ="row">
 <div class ="column">
