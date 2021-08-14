@@ -15,7 +15,7 @@ title: About Me
     </div>
     <div class="column-66">
        <p>
-        I’m interested in software development and data engineering. I gained practical experience in both areas while working at companies like the Ministry of Attorney General and PepsiCo. 
+        I’m interested in software development and data engineering. I gained practical experience in both areas while working at the Ministry of Attorney General and PepsiCo. 
         My Preferred Programming Languages are:
             <li>Ruby on Rails for Backend Development</li>
             <li>JavaScript, HTML and CSS for Frontend Development</li>
