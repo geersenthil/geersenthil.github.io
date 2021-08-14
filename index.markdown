@@ -15,7 +15,7 @@ title: About Me
     </div>
     <div class="column-66">
        <p>
-        I’m interested in software development and data engineering. I gained practical experience in both areas while working at the Ministry of Attorney General and PepsiCo. 
+        I'm currently a 3B Management Engineering student at the University of Waterloo. I’m interested in software development and data engineering. I gained practical experience in both areas while working at the Ministry of Attorney General and PepsiCo. 
         My Preferred Programming Languages are:
             <li>Ruby on Rails for Backend Development</li>
             <li>JavaScript, HTML and CSS for Frontend Development</li>
