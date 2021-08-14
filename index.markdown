@@ -11,7 +11,7 @@ title: About Me
   <div class="row">
    <div class="column-33">
   <h1 class="large-font" style="color:MediumSeaGreen;"><b>Geerthika Senthil</b></h1>
-    <img src="img\Profile_pic.jpg" style="float:left; padding-right:20px; width:225px; height:300px;"> 
+    <img src="img\Profile_pic.jpg" style="float:left; padding-right:20px; width:180px; height:300px;"> 
     </div>
     <div class="column-66">
        <p>
