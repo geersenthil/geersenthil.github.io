@@ -58,5 +58,10 @@ permalink: /projects/
       </div>
   </div>
   </div>
-  
+<div class="box" style="background-color:white; text-align:center;">
+<br>
+  <form method="get" action="/">
+  <button class="buttonNav">About Me</button>
+  </form>
+</div>
    

@@ -114,3 +114,9 @@ title: About Me
   <br>
   <br>
 </div>
+<div class="box" style="background-color:white; text-align:center;">
+<br>
+  <form method="get" action="/projects">
+  <button class="buttonNav">Click to View My Projects</button>
+  </form>
+</div>
