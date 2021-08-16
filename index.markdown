@@ -41,8 +41,15 @@ title: About Me
         <li>Developed a data warehousing procedure in SQL; scripted 20 data loaders and parsers in Toad for Oracle with ANSI SQL, PL/SQL, and T-SQL, replacing 5 cross-functional workflows</li>
         <li>Designed 7 custom reporting interfaces for 5+ departments using SSDT for Visual Studio and XML</li>
         <li>Created 3 Windows form Applications using C# to implement 2 new data workflows</li>
-        </p>
-     </div>
+        <b>Tools:</b>
+        <div class="row">
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; " >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;  width:80px;" >	<h3 style="color:white; text-align: center;">PL/SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; width:100px;" >	<h3 style="color:white; text-align: center;">Oracle</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">C#</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; " >	<h3 style="color:white; text-align: center;">XML</h3>   </div>
+        </div>
+        </p>     
   </div>
   <br>
   <div class="row"> <div class="column-33">
@@ -55,22 +62,40 @@ title: About Me
         <li>Designed three dashboards in Tableau to track the behaviour of Canadian shoppers at the retailer, brand, and cohort level to gain actionable shopper insights</li>
         <li>Created a data model in Python that tracks the causal impact of product placement changes on sales</li>
         <li>Worked in a team to propose a 2-year action plan to increase the national sales of the ‘Better for You’ product line</li>
+         <b>Tools:</b>
+        <div class="row">
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:30px; width:80px;" >	<h3 style="color:white; text-align: center;">Python</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:30px; width:100px;" >	<h3 style="color:white; text-align: center;">Tableau</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:30px; width:100px;" >	<h3 style="color:white; text-align: center;">Trifacta</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:30px;" >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
+        </div>
         </p>   
     </div>
   </div>  
-  <div class="row"> <div class="column-33">
     <br>
+  <div class="row"> <div class="column-33">
     <img src="img\Pepsi_logo.png" style="float:left; padding-right:20px; width:250px; height:300px;"> 
     </div>
     <div class="column-66"  style="padding-left:20px;">
+    <p>
        <h2>  Project Management/Data Analytics Intern </h2>	         
         <p>PepsiCo Foods, Mississauga, ON</p><p>Jan – Apr 2020</p> 
         <li>Performed data wrangling in Trifacta to help move 3+ years of sales data to the cloud and create insights into portfolios without purchasing third party data</li>
         <li>Created a dashboard for PepsiCo’s sales portal that translated daily sales numerical data which enabled the tracking of sales metrics and forecasting for various Pepsi products</li>
         <li>Refactored the companies onboarding protocol by creating 20+ user guide videos for TPM, a promotion tool</li>
-    </div>
-  </div>
+        <b style="  position: relative; padding-right:3px; float:left; left:280px;">Tools:</b>
+        <br>
+        <div class="row">
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;  width:80px;" >	<h3 style="color:white; text-align: center;">Tableau</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; width:100px;" >	<h3 style="color:white; text-align: center;">Trifacta</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
+        </div>
+        </p>
+    </div> 
     <br>
+  </div>
+ <br>
   <div class="row"> <div class="column-33">
     <img src="img\IBM_LOGO.png" style="float:right; padding-left:20px; padding-right:20px; width:200px; height:225px;"> 
     </div>
@@ -79,6 +104,13 @@ title: About Me
         <p>IBM , Markham, ON</p><p>May – Aug 2019</p> 
         <li>	Created a project management tool in Excel using VBA which helped keep track of details of all projects being worked on across Canada</li>
         <li>Self-learned Compass, a Cognos Analytics data reporting tool and hosted tutorials for the data team</li>
+         <b>Tools:</b>
+        <div class="row">
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; width:70px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; " >	<h3 style="color:white; text-align: center;">VBA</h3>   </div>
+        </div>
     </div>
   </div>
+  <br>
+  <br>
 </div>
