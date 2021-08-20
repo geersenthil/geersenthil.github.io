@@ -32,36 +32,41 @@ title: About Me
   <div class="row">
    <div class="column-33">
   <h1 class="large-font">Work Experience</h1>
-    <img src="img\MAG_LOGO.png" style="float:left; padding-right:20px; width:250px; height:300px;"> 
+    <img src="img\MAG_LOGO.png" style="float:left; padding-right:20px; width:250px; height:370px;"> 
     </div>
     <div class="column-66" style="padding-right:20px;">
     <p>
        <h2>  Programmer System Officer Intern</h2>	         
         <p>Ministry of Attorney General, Toronto, ON</p><p>May – Aug 2021</p>
-        <li>Developed a data warehousing procedure in SQL; scripted 20 data loaders and parsers in Toad for Oracle with ANSI SQL, PL/SQL, and T-SQL, replacing 5 cross-functional workflows</li>
-        <li>Designed 7 custom reporting interfaces for 5+ departments using SSDT for Visual Studio and XML</li>
-        <li>Created 3 Windows form Applications using C# to implement 2 new data workflows</li>
-        <b>Tools:</b>
+        <li>Created 2 workflows to eliminate manual handling of documents and streamline the process of making
+Registered Disability Savings Plan accounts and contributions for 3000+ clients using C#</li>
+<li>Developed a data warehousing procedure for the File Manaagement System in SQL; scripted 20 data loaders and parsers in Toad for Oracle with ANSI SQL, PL/SQL, and T-SQL, replacing 5 cross-functional workflows</li>
+<li>Designed 7 custom reporting interfaces for 5+ departments using SSDT for Visual Studio and XML</li>
+           <b style="  position: relative; padding-right:3px; float:left; ">Tools:</b>
+           <br>
         <div class="row">
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; " >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;  width:80px;" >	<h3 style="color:white; text-align: center;">PL/SQL</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; width:100px;" >	<h3 style="color:white; text-align: center;">Oracle</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; " >	<h3 style="color:white; text-align: center; padding-bottom:3px; ">SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px;  width:80px;" >	<h3 style="color:white; text-align: center;">PL/SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; width:90px;" >	<h3 style="color:white; text-align: center;">Oracle</h3>   </div>
           <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">C#</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; " >	<h3 style="color:white; text-align: center;">XML</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; " >	<h3 style="color:white; text-align: center;">XML</h3>   </div>
         </div>
         </p>     
   </div>
   <br>
+  <br>
   <div class="row"> <div class="column-33">
-    <img src="img\Pepsi_logo.png" style="float:right; padding-right:20px; width:250px; height:250px;"> 
+    <img src="img\Pepsi_logo.png" style="float:right; padding-right:20px; width:250px; height:280px;"> 
     </div>
     <div class="column-66"  style="padding-left:20px;">
     <p>
        <h2>  Data Science Intern </h2>	         
         <p>PepsiCo Foods, Mississauga, ON</p><p>Sept – Dec 2020</p>
-        <li>Designed three dashboards in Tableau to track the behaviour of Canadian shoppers at the retailer, brand, and cohort level to gain actionable shopper insights</li>
-        <li>Created a data model in Python that tracks the causal impact of product placement changes on sales</li>
-        <li>Worked in a team to propose a 2-year action plan to increase the national sales of the ‘Better for You’ product line</li>
+       <li>Designed three dashboards in Tableau to track the behaviour of Canadian shoppers at the retailer, 
+brand, and cohort level to gain actionable shopper insights and determine product popularity</li>
+<li>Created a data model in Python that tracked the impact of product placement changes on sales</li>
+<li>Worked in a team to propose a 2-year action plan to increase the national sales of the ‘Better for 
+You’ product line</li>
          <b>Tools:</b>
         <div class="row">
           <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:30px; width:80px;" >	<h3 style="color:white; text-align: center;">Python</h3>   </div>
@@ -74,15 +79,20 @@ title: About Me
   </div>  
     <br>
   <div class="row"> <div class="column-33">
-    <img src="img\Pepsi_logo.png" style="float:left; padding-right:20px; width:250px; height:300px;"> 
+  <br>
+  <br>
+    <img src="img\Pepsi_logo.png" style="float:left; padding-right:20px; padding-top:40px; width:250px; height:300px;"> 
     </div>
     <div class="column-66"  style="padding-left:20px;">
     <p>
        <h2>  Project Management/Data Analytics Intern </h2>	         
         <p>PepsiCo Foods, Mississauga, ON</p><p>Jan – Apr 2020</p> 
-        <li>Performed data wrangling in Trifacta to help move 3+ years of sales data to the cloud and create insights into portfolios without purchasing third party data</li>
-        <li>Created a dashboard for PepsiCo’s sales portal that translated daily sales numerical data which enabled the tracking of sales metrics and forecasting for various Pepsi products</li>
-        <li>Refactored the companies onboarding protocol by creating 20+ user guide videos for TPM, a promotion tool</li>
+         <li>Performed data wrangling in Trifacta to help move 3+ years of sales data to the cloud and create 
+insights into portfolios without purchasing third party data</li>
+<li>Created a dashboard for PepsiCo’s sales portal which replaced 6 daily sales reports and enabled teams 
+to track sales metrics and forecast product performance</li>
+<li>Took initiative to reconfigure the company’s onboarding protocol by creating 20+ user guide videos 
+for TPM, a promotion tool</li>
         <b style="  position: relative; padding-right:3px; float:left; left:280px;">Tools:</b>
         <br>
         <div class="row">
