@@ -26,6 +26,14 @@ title: About Me
      </div>
   </div>
 </div>
+
+<div class="box" style="background-color:white; text-align:center;">
+<br>
+  <form method="get" action="/projects">
+  <button class="buttonNav">Click to View My Projects</button>
+  </form>
+</div>
+
 <br>
 <br>
 <div class="box" style="background-color:#f1f1f1" >
@@ -47,8 +55,8 @@ Registered Disability Savings Plan accounts and contributions for 3000+ clients 
         <div class="row">
           <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; " >	<h3 style="color:white; text-align: center; padding-bottom:3px; ">SQL</h3>   </div>
           <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px;  width:80px;" >	<h3 style="color:white; text-align: center;">PL/SQL</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; width:90px;" >	<h3 style="color:white; text-align: center;">Oracle</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">C#</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; width:90px;" >	<h3 style="color:white; text-align: center;">Oracle</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">C#</h3>   </div>
           <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; " >	<h3 style="color:white; text-align: center;">XML</h3>   </div>
         </div>
         </p>     
@@ -69,10 +77,10 @@ brand, and cohort level to gain actionable shopper insights and determine produc
 You’ product line</li>
          <b>Tools:</b>
         <div class="row">
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:30px; width:80px;" >	<h3 style="color:white; text-align: center;">Python</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:30px; width:100px;" >	<h3 style="color:white; text-align: center;">Tableau</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:30px; width:100px;" >	<h3 style="color:white; text-align: center;">Trifacta</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:30px;" >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; width:80px;" >	<h3 style="color:white; text-align: center;">Python</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; width:100px;" >	<h3 style="color:white; text-align: center;">Tableau</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; width:100px;" >	<h3 style="color:white; text-align: center;">Trifacta</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px;" >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
         </div>
         </p>   
     </div>
@@ -93,13 +101,13 @@ insights into portfolios without purchasing third party data</li>
 to track sales metrics and forecast product performance</li>
 <li>Took initiative to reconfigure the company’s onboarding protocol by creating 20+ user guide videos 
 for TPM, a promotion tool</li>
-        <b style="  position: relative; padding-right:3px; float:left; left:280px;">Tools:</b>
+        <b style="  position: relative; padding-right:6px; float:left; left:280px;">Tools:</b>
         <br>
         <div class="row">
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;  width:80px;" >	<h3 style="color:white; text-align: center;">Tableau</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px; width:100px;" >	<h3 style="color:white; text-align: center;">Trifacta</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px;  width:80px;" >	<h3 style="color:white; text-align: center;">Tableau</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; width:100px;" >	<h3 style="color:white; text-align: center;">Trifacta</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:8px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
         </div>
         </p>
     </div> 
@@ -116,17 +124,12 @@ for TPM, a promotion tool</li>
         <li>Self-learned Compass, a Cognos Analytics data reporting tool and hosted tutorials for the data team</li>
          <b>Tools:</b>
         <div class="row">
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; width:70px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:3px; float:left; " >	<h3 style="color:white; text-align: center;">VBA</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; width:70px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; " >	<h3 style="color:white; text-align: center;">VBA</h3>   </div>
         </div>
     </div>
   </div>
   <br>
   <br>
 </div>
-<div class="box" style="background-color:white; text-align:center;">
-<br>
-  <form method="get" action="/projects">
-  <button class="buttonNav">Click to View My Projects</button>
-  </form>
-</div>
+
