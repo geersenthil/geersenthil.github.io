@@ -15,7 +15,7 @@ title: About Me
     </div>
     <div class="column-66">
        <p>
-        I'm currently a 3B Management Engineering student at the University of Waterloo. I’m interested in software development and data engineering. I gained practical experience in both areas while working at the Ministry of Attorney General and PepsiCo. 
+        I'm currently a 3B Management Engineering student at the University of Waterloo. I’m interested in software development and data engineering. I gained practical experience in both areas while working at the Ministry of the Attorney General and PepsiCo. 
         My Preferred Programming Languages are:
             <li>Ruby on Rails for Backend Development</li>
             <li>JavaScript, HTML and CSS for Frontend Development</li>
@@ -45,7 +45,7 @@ title: About Me
     <div class="column-66" style="padding-right:20px;">
     <p>
        <h2>  Programmer System Officer Intern</h2>	         
-        <p>Ministry of Attorney General, Toronto, ON</p><p>May – Aug 2021</p>
+        <p>Ministry of the Attorney General, Toronto, ON</p><p>May – Aug 2021</p>
         <li>Created 2 workflows to eliminate manual handling of documents and streamline the process of making
 Registered Disability Savings Plan accounts and contributions for 3000+ clients using C#</li>
 <li>Developed a data warehousing procedure for the File Manaagement System in SQL; scripted 20 data loaders and parsers in Toad for Oracle with ANSI SQL, PL/SQL, and T-SQL, replacing 5 cross-functional workflows</li>
