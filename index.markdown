@@ -32,9 +32,39 @@ title: About Me
   <form method="get" action="/projects">
   <button class="buttonNav">Click to View My Side Projects</button>
   </form>
-</div><br>
+    <br>
+</div>
+
+  <h1 class="large-font">Hackathons and Conferences Attended:</h1>
+<div class="box" style="text-align:center; padding-bottom:90px;">
+
+  <div class="row">
+  <div style="float: left;">
+    <img src="img\StarterHacks.png" style="float:left;  padding-top:10px; padding-left:80px; width:100px; height:100px;"> 
+   <p style="padding-left:60px;text-align:center;"> Starter Hacks <br>2019</p>
+    </div>
+      <div style="float: left;">
+       <img src="img\TO_Hacks.jpg" style="float:left; padding-top:10px; width:100px; height:100px;"> 
+   <p style="text-align:center;"> TO Hacks <br>2019</p>
+    </div>
+     <div style="float: left;">
+     <img src="img\IISE.jpg" style="float:left; padding-top:10px; width:100px; height:100px;"> 
+   <p style="text-align:center;"> IISE <br> 2020</p>
+    </div>
+       <div style="float: left;">
+     <img src="img\Hack_the_North.png" style="float:left; padding-top:10px; width:100px; height:100px;"> 
+   <p style="text-align:center;"> Hack the North <br> 2021</p>
+    </div>
+   <div style="float: left;">
+   <img src="img\WISE.png" style="float:left; padding-top:10px; width:100px; height:100px;"> 
+   <p style="text-align:center;"> WISE <br> 2021</p>
+    </div>
+  <br>  <br>
+</div>
 <br>
 </div>
+<br>
+
 
 <div class="box" style="background-color:#f1f1f1" >
   <div class="row">
