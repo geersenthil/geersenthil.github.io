@@ -40,8 +40,8 @@ title: About Me
 
   <div class="row">
   <div style="float: left;">
-    <img src="img\StarterHacks.png" style="float:left;  padding-top:10px; padding-left:80px; width:100px; height:100px;"> 
-   <p style="padding-left:60px;text-align:center;"> Starter Hacks <br>2019</p>
+    <img src="img\StarterHacks.png" style="float:left;  padding-top:10px; padding-left:120px; width:100px; height:100px;"> 
+   <p style="padding-left:80px;text-align:center;"> Starter Hacks <br>2019</p>
     </div>
       <div style="float: left;">
        <img src="img\TO_Hacks.jpg" style="float:left; padding-top:10px; width:100px; height:100px;"> 
@@ -127,7 +127,7 @@ title: About Me
   <div class="row">
    <div class="column-33">
   <h1 class="large-font">Work Experience</h1>
-    <img src="img\MAG_LOGO.png" style="float:left; padding-right:40px; padding-top:20px;width:210px; height:360px;"> 
+    <img src="img\MAG_LOGO.png" style="float:left; padding-right:40px; padding-top:20px;width:210px; height:330px;"> 
     </div>
     <div class="column-66" style="padding-right:20px;">
     <p>
@@ -140,11 +140,11 @@ Registered Disability Savings Plan accounts and contributions for 3000+ clients 
            <b style="  position: relative; padding-right:3px; float:left; ">Tools:</b>
            <br>
         <div class="row">
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; " >	<h3 style="color:white; text-align: center; padding-bottom:3px; ">SQL</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px;  width:80px;" >	<h3 style="color:white; text-align: center;">PL/SQL</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; width:90px;" >	<h3 style="color:white; text-align: center;">Oracle</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">C#</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; " >	<h3 style="color:white; text-align: center;">XML</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px;" >	<h3 style="color:white; text-align: center; padding-bottom:3px; ">SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left;  left:30px; width:80px;" >	<h3 style="color:white; text-align: center;">PL/SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px;  width:90px;" >	<h3 style="color:white; text-align: center;">Oracle</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; " >	<h3 style="color:white; text-align: center;">C#</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; " >	<h3 style="color:white; text-align: center;">XML</h3>   </div>
         </div>
         </p>     
   </div>
@@ -188,13 +188,13 @@ insights into portfolios without purchasing third party data</li>
 to track sales metrics and forecast product performance</li>
 <li>Took initiative to reconfigure the company’s onboarding protocol by creating 20+ user guide videos 
 for TPM, a promotion tool</li>
-        <b style="  position: relative; padding-right:6px; float:left; left:280px;">Tools:</b>
+        <b style="  position: relative; padding-right:6px; float:left;">Tools:</b>
         <br>
         <div class="row">
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px;  width:80px;" >	<h3 style="color:white; text-align: center;">Tableau</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px; width:100px;" >	<h3 style="color:white; text-align: center;">Trifacta</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:8px; float:left; left:300px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; width:80px;" >	<h3 style="color:white; text-align: center;">Tableau</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; width:100px;" >	<h3 style="color:white; text-align: center;">Trifacta</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; " >	<h3 style="color:white; text-align: center;">SQL</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:8px; float:left; left:30px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
         </div>
         </p>
     </div> 
@@ -202,7 +202,7 @@ for TPM, a promotion tool</li>
   </div>
  <br>
   <div class="row"> <div class="column-33">
-    <img src="img\IBM_LOGO.png" style="float:right; padding-left:20px; padding-right:20px; padding-top:20px;  width:180px; height:200px;"> 
+    <img src="img\IBM_LOGO.png" style="float:right; padding-left:20px; padding-right:20px; padding-top:20px;  width:180px; height:180px;"> 
     </div>
     <div class="column-66"  style="padding-left:20px;">
        <h2>  Business Analyst Intern </h2>	         
@@ -211,8 +211,8 @@ for TPM, a promotion tool</li>
         <li>Self-learned Compass, a Cognos Analytics data reporting tool and hosted tutorials for the data team</li>
          <b>Tools:</b>
         <div class="row">
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; width:70px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
-          <div class="tool2" style="  position: relative; padding-right:6px; float:left; " >	<h3 style="color:white; text-align: center;">VBA</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; width:70px;" >	<h3 style="color:white; text-align: center;">Excel</h3>   </div>
+          <div class="tool2" style="  position: relative; padding-right:6px; float:left; left:30px; " >	<h3 style="color:white; text-align: center;">VBA</h3>   </div>
         </div>
     </div>
   </div>
