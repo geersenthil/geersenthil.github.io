@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geerthika Senthil, Senior Software Engineer</title>
+<meta name="description" content="Senior software engineer at Munich Re in Toronto, building production AI systems and the backend services behind them.">
+<meta property="og:title" content="Geerthika Senthil, Senior Software Engineer">
+<meta property="og:description" content="Production AI systems and the backend services behind them. Munich Re, Toronto.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://geersenthil.github.io/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23172033'/%3E%3Crect x='9' y='9' width='14' height='14' rx='2' fill='%238F2D3F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400..700&family=Newsreader:opsz,wght@6..72,400..600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!-- Shared diagram parts, drawn once and reused on the page and in the popups -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <marker id="dg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path class="dg-head" d="M1.5 1.5 L8.5 5 L1.5 8.5"/>
+    </marker>
+
+    <symbol id="dg-ordering" viewBox="0 0 360 220">
+      <rect class="dg-node" x="8" y="36" width="28" height="28" rx="4"/>
+      <rect class="dg-node" x="8" y="96" width="28" height="28" rx="4"/>
+      <rect class="dg-node" x="8" y="156" width="28" height="28" rx="4"/>
+      <path class="dg-line dg-flow" d="M40 52 L114 78" marker-end="url(#dg-arrow)"/>
+      <path class="dg-line dg-flow" d="M40 110 H114" marker-end="url(#dg-arrow)"/>
+      <path class="dg-line dg-flow" d="M40 168 L114 142" marker-end="url(#dg-arrow)"/>
+      <rect class="dg-key" x="120" y="44" width="120" height="132" rx="6"/>
+      <text class="dg-text dg-on-key" x="180" y="102">Ordering</text>
+      <text class="dg-text dg-on-key" x="180" y="120">platform</text>
+      <text class="dg-small dg-on-key" x="180" y="150">OSS Conductor</text>
+      <path class="dg-line dg-flow" d="M246 78 L318 52" marker-end="url(#dg-arrow)"/>
+      <path class="dg-line dg-flow" d="M246 110 H318" marker-end="url(#dg-arrow)"/>
+      <path class="dg-line dg-flow" d="M246 142 L318 168" marker-end="url(#dg-arrow)"/>
+      <rect class="dg-node" x="324" y="36" width="28" height="28" rx="4"/>
+      <rect class="dg-node" x="324" y="96" width="28" height="28" rx="4"/>
+      <rect class="dg-node" x="324" y="156" width="28" height="28" rx="4"/>
+      <text class="dg-small dg-start" x="8" y="208">3 clients</text>
+      <text class="dg-small dg-end" x="352" y="208">3 vendors</text>
+    </symbol>
+
+    <symbol id="dg-openai" viewBox="0 0 360 220">
+      <rect class="dg-node" x="4" y="82" width="72" height="56" rx="4"/>
+      <text class="dg-small" x="40" y="114" font-size="11.5">Documents</text>
+      <path class="dg-line dg-flow" d="M78 110 H98" marker-end="url(#dg-arrow)"/>
+      <rect class="dg-group" x="100" y="8" width="160" height="204" rx="6"/>
+      <text class="dg-text" x="180" y="30" font-size="12.5">Integration service</text>
+      <rect class="dg-pill" x="114" y="42" width="132" height="28" rx="3"/>
+      <text class="dg-small" x="180" y="60" font-size="12">De-identification</text>
+      <rect class="dg-pill" x="114" y="75" width="132" height="28" rx="3"/>
+      <text class="dg-small" x="180" y="93" font-size="11.5">Token-usage logging</text>
+      <rect class="dg-pill" x="114" y="108" width="132" height="28" rx="3"/>
+      <text class="dg-small" x="180" y="126" font-size="12">Caching</text>
+      <rect class="dg-pill" x="114" y="141" width="132" height="28" rx="3"/>
+      <text class="dg-small" x="180" y="159" font-size="12">Rate limiting</text>
+      <rect class="dg-pill" x="114" y="174" width="132" height="28" rx="3"/>
+      <text class="dg-small" x="180" y="192" font-size="12">Retries</text>
+      <path class="dg-line dg-flow" d="M262 110 H282" marker-end="url(#dg-arrow)"/>
+      <rect class="dg-node" x="284" y="82" width="72" height="56" rx="4"/>
+      <text class="dg-text" x="320" y="115">OpenAI</text>
+    </symbol>
+
+    <symbol id="dg-migration" viewBox="0 0 360 220">
+      <rect class="dg-node" x="8" y="64" width="112" height="92" rx="6"/>
+      <text class="dg-text" x="64" y="106">Legacy</text>
+      <text class="dg-text" x="64" y="124">FHIR service</text>
+      <text class="dg-text" x="180" y="84">16 million</text>
+      <text class="dg-small" x="180" y="100">client records</text>
+      <path class="dg-line dg-flow" d="M126 112 H232" marker-end="url(#dg-arrow)"/>
+      <rect class="dg-soft" x="132" y="128" width="96" height="26" rx="3"/>
+      <text class="dg-small" x="180" y="145">zero downtime</text>
+      <rect class="dg-key" x="240" y="64" width="112" height="92" rx="6"/>
+      <text class="dg-text dg-on-key" x="296" y="106">New</text>
+      <text class="dg-text dg-on-key" x="296" y="124">platform</text>
+    </symbol>
+
+    <symbol id="dg-contracts" viewBox="0 0 360 220">
+      <rect class="dg-node" x="6" y="34" width="100" height="44" rx="4"/>
+      <text class="dg-small" x="56" y="53">New vendor</text>
+      <text class="dg-small" x="56" y="68">onboarded</text>
+      <rect class="dg-node" x="6" y="142" width="100" height="44" rx="4"/>
+      <text class="dg-small" x="56" y="161">Code</text>
+      <text class="dg-small" x="56" y="176">refactor</text>
+      <path class="dg-line dg-flow" d="M108 58 L144 90" marker-end="url(#dg-arrow)"/>
+      <path class="dg-line dg-flow" d="M108 162 L144 130" marker-end="url(#dg-arrow)"/>
+      <circle class="dg-key" cx="178" cy="110" r="34"/>
+      <text class="dg-text dg-on-key" x="178" y="115">Agent</text>
+      <path class="dg-line dg-flow" d="M204 88 L248 44" marker-end="url(#dg-arrow)"/>
+      <path class="dg-line dg-flow" d="M214 110 H248" marker-end="url(#dg-arrow)"/>
+      <rect class="dg-node" x="252" y="16" width="102" height="40" rx="4"/>
+      <text class="dg-small" x="303" y="32">Updated</text>
+      <text class="dg-small" x="303" y="46">contracts</text>
+      <rect class="dg-node" x="252" y="90" width="102" height="40" rx="4"/>
+      <text class="dg-small" x="303" y="106">Flagged</text>
+      <text class="dg-small" x="303" y="120">failures</text>
+      <path class="dg-line dg-flow" d="M303 133 V160" marker-end="url(#dg-arrow)"/>
+      <rect class="dg-soft" x="252" y="164" width="102" height="40" rx="4"/>
+      <text class="dg-small" x="303" y="180">Human</text>
+      <text class="dg-small" x="303" y="194">review</text>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="#top">Geerthika Senthil</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#ai">AI engineering</a>
+      <a href="#work">Selected work</a>
+      <a href="#path">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <section class="hero" aria-labelledby="name">
+    <div class="hero__text">
+      <h1 id="name" style="--i:0">Geerthika Senthil</h1>
+      <div class="byline" style="--i:1">
+        <p class="role">Senior Software Engineer, Munich Re</p>
+      </div>
+      <p class="lede" style="--i:2">I build production AI systems and the backend services they depend on. I owned Munich Re's first production OpenAI integration, which processed more than 10,000 documents a day, and built an agentic workflow, with human review, that keeps service contracts in sync.</p>
+      <p class="hero__meta" style="--i:3">Based in Toronto. BASc in Management Engineering from the University of Waterloo.</p>
+      <div class="actions" style="--i:4">
+        <a class="btn btn--solid" href="mailto:geerthika.senthil@gmail.com">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/Geerthika-Senthil/" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/geersenthil" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <figure class="hero-art" style="margin:0">
+      <svg viewBox="0 0 380 312" role="img" aria-label="Animated diagram: documents flow into an integration service that handles de-identification, token-usage logging, caching, rate limiting and retries, then on to OpenAI. Prompt-to-result tracking feeds data science.">
+        <rect class="dg-node" x="14" y="96" width="44" height="52" rx="3"/>
+        <rect class="dg-node" x="12" y="100" width="44" height="52" rx="3"/>
+        <rect class="dg-node" x="10" y="104" width="44" height="52" rx="3"/>
+        <text class="dg-small" x="36" y="178" font-size="12">Documents</text>
+        <path class="dg-line" d="M62 130 H102" marker-end="url(#dg-arrow)"/>
+
+        <rect class="dg-group" x="106" y="20" width="168" height="212" rx="6"/>
+        <text class="dg-text" x="190" y="42" font-size="13">Integration service</text>
+        <rect class="dg-pill" x="120" y="54" width="140" height="28" rx="3"/>
+        <text class="dg-small" x="190" y="72" font-size="12">De-identification</text>
+        <rect class="dg-pill" x="120" y="88" width="140" height="28" rx="3"/>
+        <text class="dg-small" x="190" y="106" font-size="12">Token-usage logging</text>
+        <rect class="dg-pill" x="120" y="122" width="140" height="28" rx="3"/>
+        <text class="dg-small" x="190" y="140" font-size="12">Caching</text>
+        <rect class="dg-pill" x="120" y="156" width="140" height="28" rx="3"/>
+        <text class="dg-small" x="190" y="174" font-size="12">Rate limiting</text>
+        <rect class="dg-pill" x="120" y="190" width="140" height="28" rx="3"/>
+        <text class="dg-small" x="190" y="208" font-size="12">Retries</text>
+
+        <path class="dg-line" d="M276 130 H310" marker-end="url(#dg-arrow)"/>
+        <rect class="dg-key" x="314" y="102" width="62" height="56" rx="4"/>
+        <text class="dg-text dg-on-key" x="345" y="135" font-size="13">OpenAI</text>
+
+        <path class="dg-line" d="M190 234 V252" marker-end="url(#dg-arrow)"/>
+        <rect class="dg-soft" x="106" y="254" width="168" height="40" rx="6"/>
+        <text class="dg-small" x="190" y="278" font-size="12">Prompt-to-result tracking</text>
+        <path class="dg-line" d="M276 274 H310" marker-end="url(#dg-arrow)"/>
+        <rect class="dg-node" x="314" y="254" width="62" height="40" rx="4"/>
+        <text class="dg-small" x="345" y="270" font-size="11.5">Data</text>
+        <text class="dg-small" x="345" y="284" font-size="11.5">science</text>
+
+        <circle class="pkt" cx="62" cy="130" r="4" style="--dx:36px;--d:0s"/>
+        <circle class="pkt" cx="62" cy="130" r="4" style="--dx:36px;--d:1.2s"/>
+        <circle class="pkt" cx="276" cy="130" r="4" style="--dx:32px;--d:0.6s"/>
+        <circle class="pkt" cx="276" cy="130" r="4" style="--dx:32px;--d:1.8s"/>
+        <circle class="pkt" cx="276" cy="274" r="4" style="--dx:32px;--d:1.1s"/>
+      </svg>
+      <figcaption class="hero-art__cap">A simplified view of the production OpenAI integration.</figcaption>
+    </figure>
+  </section>
+
+  <ul class="stats" aria-label="Highlights">
+    <li class="reveal">
+      <span class="stat__num" data-to="10000" data-suffix="+">10,000+</span>
+      <span class="stat__label">documents processed per day by the OpenAI integration</span>
+    </li>
+    <li class="reveal">
+      <span class="stat__num" data-to="16" data-suffix=" million">16 million</span>
+      <span class="stat__label">client records migrated with zero downtime</span>
+    </li>
+    <li class="reveal">
+      <span class="stat__num" data-to="2" data-suffix=" months">2 months</span>
+      <span class="stat__label">to deliver the ordering platform to three clients</span>
+    </li>
+    <li class="reveal">
+      <span class="stat__num" data-to="10" data-suffix="x">10x</span>
+      <span class="stat__label">more parallel requests supported after scaling</span>
+    </li>
+  </ul>
+
+  <section class="section" id="ai" aria-labelledby="ai-h">
+    <h2 id="ai-h">AI engineering</h2>
+    <div>
+      <p class="section__intro">How I put language models and agents into production.</p>
+      <ul class="principles">
+        <li class="reveal">
+          <h3>Protect the data</h3>
+          <p>De-identification is part of the integration from the first proof of concept.</p>
+        </li>
+        <li class="reveal">
+          <h3>Control cost and reliability</h3>
+          <p>Token-usage logging, caching, rate limiting and retries keep the service dependable at 10,000+ documents per day.</p>
+        </li>
+        <li class="reveal">
+          <h3>Make prompts measurable</h3>
+          <p>Prompt-to-result tracking lets data science trace each result back to its prompt and iterate.</p>
+        </li>
+        <li class="reveal">
+          <h3>Keep people in the loop</h3>
+          <p>The agentic contract-testing workflow routes flagged failures to a person for review.</p>
+        </li>
+      </ul>
+      <p class="principles-link"><button class="link-btn" type="button" data-open="dlg-openai">See the OpenAI integration walkthrough</button></p>
+    </div>
+  </section>
+
+  <section class="section" id="work" aria-labelledby="work-h">
+    <h2 id="work-h">Selected work</h2>
+    <div>
+      <p class="section__intro">Four projects from my time at Munich Re. Each opens a walkthrough with a diagram and the full details.</p>
+
+      <article class="story reveal">
+        <div class="story__text">
+          <h3>First production OpenAI integration</h3>
+          <p>Owned end to end, from scoping requirements with data scientists to a proof of concept with de-identification, token-usage logging, caching, rate limiting and retries. It became the template for later integrations.</p>
+          <p>Prompt-to-result tracking lets data science iterate on prompts. The service processed <strong>10,000+ documents per day</strong>.</p>
+          <button class="link-btn" type="button" data-open="dlg-openai">View walkthrough</button>
+        </div>
+        <div class="figure">
+          <svg viewBox="0 0 360 220" role="img" aria-label="Diagram: documents enter an integration service with de-identification, token-usage logging, caching, rate limiting and retries, then go to OpenAI."><use href="#dg-openai"/></svg>
+        </div>
+      </article>
+
+      <article class="story reveal">
+        <div class="story__text">
+          <h3>Agentic contract testing</h3>
+          <p>An agentic workflow that keeps service contracts consistent between services. An agent updates contracts when a new vendor is onboarded and catches breakage introduced by refactors, with human-in-the-loop review of flagged failures.</p>
+          <button class="link-btn" type="button" data-open="dlg-contracts">View walkthrough</button>
+        </div>
+        <div class="figure">
+          <svg viewBox="0 0 360 220" role="img" aria-label="Diagram: a new vendor or a code refactor triggers an agent, which updates contracts and flags failures for human review."><use href="#dg-contracts"/></svg>
+        </div>
+      </article>
+
+      <article class="story reveal">
+        <div class="story__text">
+          <h3>Third-party ordering platform</h3>
+          <p>Delivered a microservices-based ordering application to three clients, integrating three vendors. Multi-step workflows are orchestrated with OSS Conductor across Python and FastAPI services on Kubernetes.</p>
+          <p>Shipped in <strong>two months</strong>, accelerating a roadmap planned for a year, and recognized with a Spot Bonus from the SVP of Digital Solutions.</p>
+          <button class="link-btn" type="button" data-open="dlg-ordering">View walkthrough</button>
+        </div>
+        <div class="figure">
+          <svg viewBox="0 0 360 220" role="img" aria-label="Diagram: three clients send orders to an ordering platform running OSS Conductor, which connects to three vendors."><use href="#dg-ordering"/></svg>
+        </div>
+      </article>
+
+      <article class="story reveal">
+        <div class="story__text">
+          <h3>FHIR platform migration</h3>
+          <p>Planned and led the migration of <strong>16 million client records</strong> from a legacy FHIR service to a new platform with zero downtime.</p>
+          <p>In the same role: infrastructure provisioned with Terraform, role-based access control for Azure resources and SQL Server, a Gravitee API gateway with OAuth 2.0, and load-tested scaling to <strong>10x more parallel requests</strong>.</p>
+          <button class="link-btn" type="button" data-open="dlg-migration">View walkthrough</button>
+        </div>
+        <div class="figure">
+          <svg viewBox="0 0 360 220" role="img" aria-label="Diagram: 16 million client records move from a legacy FHIR service to a new platform with zero downtime."><use href="#dg-migration"/></svg>
+        </div>
+      </article>
+
+      <article class="story story--wide reveal">
+        <div class="story__text">
+          <h3>Production ownership and compliance</h3>
+          <p>Primary on-call engineer for two production applications, with near-zero downtime. Feature owner across four services, responsible for requirements, dependency mapping, ticket planning, delegation and delivery against client deadlines.</p>
+          <p>Prepared compliance documentation for two applications that contributed to a successful <strong>SOC 2 Type 2</strong> audit, and authored Software Solution Designs to secure IT approval for new deployments.</p>
+          <button class="link-btn" type="button" data-open="dlg-beyond">View details</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="path" aria-labelledby="path-h">
+    <h2 id="path-h">Experience</h2>
+    <div>
+      <ol class="path">
+        <li class="reveal">
+          <p class="when">Jan 2025 to present</p>
+          <div>
+            <h3>Senior Software Engineer</h3>
+            <p class="where">Munich Re, Toronto</p>
+            <p class="what">First production OpenAI integration, agentic contract testing, the ordering platform, and on-call and feature ownership across four services.</p>
+            <button class="link-btn" type="button" data-open="dlg-senior">View details</button>
+          </div>
+        </li>
+        <li class="reveal">
+          <p class="when">Jun 2023 to Dec 2024</p>
+          <div>
+            <h3>Software Engineer</h3>
+            <p class="where">Munich Re, Toronto</p>
+            <p class="what">Migration of 16 million records, Terraform infrastructure, API gateway and performance work, and mentoring of seven engineers.</p>
+            <button class="link-btn" type="button" data-open="dlg-swe">View details</button>
+          </div>
+        </li>
+        <li class="reveal">
+          <p class="when">Sept to Dec 2022</p>
+          <div>
+            <h3>Data Engineer Intern</h3>
+            <p class="where">Munich Re, Toronto</p>
+            <p class="what">A microservices NLP application that summarized patient health conditions, with Azure document ingestion and event publishing.</p>
+            <button class="link-btn" type="button" data-open="dlg-intern">View details</button>
+          </div>
+        </li>
+        <li class="reveal">
+          <p class="when">Jan to Apr 2022</p>
+          <div>
+            <h3>Innovation Application Developer Intern</h3>
+            <p class="where">Sun Life Financial, Toronto</p>
+            <p class="what">NLP topic models for call-centre analysis, a multi-factor authentication voice skill and three web applications.</p>
+            <button class="link-btn" type="button" data-open="dlg-sunlife">View details</button>
+          </div>
+        </li>
+      </ol>
+      <p class="earlier">Earlier internships: Ministry of the Attorney General (2021), PepsiCo Foods (2020, two terms) and IBM (2019).</p>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h">Skills</h2>
+    <dl class="rows">
+      <div class="reveal">
+        <dt>AI and machine learning</dt>
+        <dd>Azure OpenAI, OpenAI integrations, agentic workflows, Claude Code, NLP, NLTK, scikit-learn, Gensim, spaCy, NumPy</dd>
+      </div>
+      <div class="reveal">
+        <dt>Languages and frameworks</dt>
+        <dd>Python, FastAPI, SQL, REST APIs, Java, JavaScript, Ruby on Rails, React, VBA, HTML</dd>
+      </div>
+      <div class="reveal">
+        <dt>Tools and platforms</dt>
+        <dd>Terraform, Docker, Kubernetes, Ansible, GitHub Actions, Airflow, SQL Server, OSS Conductor, PostgreSQL, Git, Helm, Gravitee, Datadog, Playwright</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="section" id="education" aria-labelledby="education-h">
+    <h2 id="education-h">Education</h2>
+    <dl class="rows">
+      <div class="reveal">
+        <dt>University of Waterloo</dt>
+        <dd>Bachelor of Applied Science in Management Engineering, with the computing option. September 2018 to April 2023.</dd>
+      </div>
+      <div class="reveal">
+        <dt>Relevant courses</dt>
+        <dd>Algorithms and Data Structures, Data Mining, Databases and Software Design, Advanced Machine Learning, Principles of Software Engineering, Human Computer Interaction</dd>
+      </div>
+      <div class="reveal">
+        <dt>Certificates</dt>
+        <dd>DevOps, York University. Big Data Management Systems and Tools, University of Waterloo.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Contact</h2>
+    <div>
+      <p>For senior engineering roles or conversations about production AI, reach me by email or on LinkedIn.</p>
+      <ul class="contact-links">
+        <li><a href="mailto:geerthika.senthil@gmail.com">geerthika.senthil@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/Geerthika-Senthil/" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/geersenthil" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p>Geerthika Senthil, Toronto</p>
+</footer>
+
+<!-- Popups -->
+<dialog class="dlg" id="dlg-ordering" aria-labelledby="dlg-ordering-t">
+  <div class="dlg__body">
+    <div class="dlg__head">
+      <div>
+        <h2 id="dlg-ordering-t">Third-party ordering platform</h2>
+        <p class="dlg__sub">Munich Re, Senior Software Engineer</p>
+      </div>
+      <form method="dialog"><button class="btn btn--sm" autofocus>Close</button></form>
+    </div>
+    <div class="dlg__figure">
+      <svg viewBox="0 0 360 220" role="img" aria-label="Diagram: three clients send orders to an ordering platform running OSS Conductor, which connects to three vendors."><use href="#dg-ordering"/></svg>
+    </div>
+    <ul class="points">
+      <li>Delivered a microservices-based third-party ordering application to <strong>3 clients in 2 months</strong>, integrating <strong>3 vendors</strong> and accelerating a 1-year roadmap.</li>
+      <li>Orchestrated complex, multi-step workflows with OSS Conductor across services built with Python, FastAPI, Kubernetes, Docker and GitHub CI/CD.</li>
+      <li>Earned a Spot Bonus from the SVP of Digital Solutions.</li>
+    </ul>
+    <p class="stack"><strong>Stack</strong>Python, FastAPI, OSS Conductor, Kubernetes, Docker, GitHub CI/CD</p>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-openai" aria-labelledby="dlg-openai-t">
+  <div class="dlg__body">
+    <div class="dlg__head">
+      <div>
+        <h2 id="dlg-openai-t">First production OpenAI integration</h2>
+        <p class="dlg__sub">Munich Re, Senior Software Engineer</p>
+      </div>
+      <form method="dialog"><button class="btn btn--sm" autofocus>Close</button></form>
+    </div>
+    <div class="dlg__figure">
+      <svg viewBox="0 0 360 220" role="img" aria-label="Diagram: documents enter an integration service with de-identification, token-usage logging, caching, rate limiting and retries, then go to OpenAI."><use href="#dg-openai"/></svg>
+    </div>
+    <ul class="points">
+      <li>Owned Munich Re's first production OpenAI integration end to end.</li>
+      <li>Scoped requirements with data scientists and built the proof of concept with de-identification, token-usage logging, caching, rate limiting and retries.</li>
+      <li>Established the template for later integrations.</li>
+      <li>Added prompt-to-result tracking so data science could iterate on prompts.</li>
+      <li>Processed <strong>10,000+ documents per day</strong>.</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-migration" aria-labelledby="dlg-migration-t">
+  <div class="dlg__body">
+    <div class="dlg__head">
+      <div>
+        <h2 id="dlg-migration-t">FHIR platform migration</h2>
+        <p class="dlg__sub">Munich Re, Software Engineer</p>
+      </div>
+      <form method="dialog"><button class="btn btn--sm" autofocus>Close</button></form>
+    </div>
+    <div class="dlg__figure">
+      <svg viewBox="0 0 360 220" role="img" aria-label="Diagram: 16 million client records move from a legacy FHIR service to a new platform with zero downtime."><use href="#dg-migration"/></svg>
+    </div>
+    <ul class="points">
+      <li>Planned and led the migration of <strong>16 million client records</strong> from a legacy FHIR service to a new platform, maintaining production stability with zero downtime.</li>
+      <li>Provisioned secure infrastructure using Terraform, with role-based access control (RBAC) for Azure resources and SQL Server.</li>
+      <li>Scaled system performance to support <strong>10x more parallel requests</strong> by optimizing CPU and memory utilization, validated with Locust load tests.</li>
+      <li>Secured service access by configuring a Gravitee API gateway for traffic management and OAuth 2.0 authentication.</li>
+    </ul>
+    <p class="stack"><strong>Stack</strong>Terraform, Azure RBAC, SQL Server, Gravitee, Locust</p>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-contracts" aria-labelledby="dlg-contracts-t">
+  <div class="dlg__body">
+    <div class="dlg__head">
+      <div>
+        <h2 id="dlg-contracts-t">Agentic contract testing</h2>
+        <p class="dlg__sub">Munich Re, Senior Software Engineer</p>
+      </div>
+      <form method="dialog"><button class="btn btn--sm" autofocus>Close</button></form>
+    </div>
+    <div class="dlg__figure">
+      <svg viewBox="0 0 360 220" role="img" aria-label="Diagram: a new vendor or a code refactor triggers an agent, which updates contracts and flags failures for human review."><use href="#dg-contracts"/></svg>
+    </div>
+    <ul class="points">
+      <li>Built an agentic contract-testing workflow between services.</li>
+      <li>An agent updates service contracts when a new vendor is onboarded.</li>
+      <li>It also catches breakage caused by refactors.</li>
+      <li>Flagged failures go through human-in-the-loop review.</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-beyond" aria-labelledby="dlg-beyond-t">
+  <div class="dlg__body">
+    <div class="dlg__head">
+      <div>
+        <h2 id="dlg-beyond-t">Production ownership and compliance</h2>
+        <p class="dlg__sub">Munich Re</p>
+      </div>
+      <form method="dialog"><button class="btn btn--sm" autofocus>Close</button></form>
+    </div>
+    <ul class="points">
+      <li>Primary on-call engineer for <strong>two production applications</strong>, maintaining production stability at scale with near-zero downtime.</li>
+      <li>Feature owner across <strong>four services</strong>: ran requirements with each service lead, mapped cross-service dependencies, planned and wrote tickets, delegated work to engineers, and owned delivery against client deadlines.</li>
+      <li>Prepared compliance documentation for <strong>two applications</strong>, contributing to a successful SOC 2 Type 2 audit approval.</li>
+      <li>Authored Software Solution Designs to secure IT approval for new deployments.</li>
+      <li>As a software engineer, mentored and onboarded <strong>7 software engineers</strong> and took part in code reviews.</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-senior" aria-labelledby="dlg-senior-t">
+  <div class="dlg__body">
+    <div class="dlg__head">
+      <div>
+        <h2 id="dlg-senior-t">Senior Software Engineer</h2>
+        <p class="dlg__sub">Munich Re, Toronto. Jan 2025 to present</p>
+      </div>
+      <form method="dialog"><button class="btn btn--sm" autofocus>Close</button></form>
+    </div>
+    <ul class="points">
+      <li>Owned Munich Re's first production OpenAI integration end to end and established the template for later integrations. Processed 10,000+ documents per day.</li>
+      <li>Built an agentic contract-testing workflow between services, with human-in-the-loop review of flagged failures.</li>
+      <li>Delivered a microservices-based third-party ordering application to 3 clients in 2 months, integrating 3 vendors and accelerating a 1-year roadmap, with workflows orchestrated in OSS Conductor.</li>
+      <li>Served as the primary on-call engineer for two production applications.</li>
+      <li>Owned features across four services, from requirements through delivery against client deadlines.</li>
+      <li>Prepared compliance documentation for two applications, contributing to a successful SOC 2 Type 2 audit approval, and authored Software Solution Designs to secure IT approval for new deployments.</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-swe" aria-labelledby="dlg-swe-t">
+  <div class="dlg__body">
+    <div class="dlg__head">
+      <div>
+        <h2 id="dlg-swe-t">Software Engineer</h2>
+        <p class="dlg__sub">Munich Re, Toronto. Jun 2023 to Dec 2024</p>
+      </div>
+      <form method="dialog"><button class="btn btn--sm" autofocus>Close</button></form>
+    </div>
+    <ul class="points">
+      <li>Planned and led the migration of 16 million client records from a legacy FHIR service to a new platform, maintaining production stability with zero downtime.</li>
+      <li>Mentored and onboarded 7 software engineers and took part in code reviews.</li>
+      <li>Provisioned secure infrastructure using Terraform, with role-based access control for Azure resources and SQL Server.</li>
+      <li>Scaled system performance to support 10x more parallel requests by optimizing CPU and memory utilization, validated with Locust load tests.</li>
+      <li>Secured service access by configuring a Gravitee API gateway for traffic management and OAuth 2.0 authentication.</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-intern" aria-labelledby="dlg-intern-t">
+  <div class="dlg__body">
+    <div class="dlg__head">
+      <div>
+        <h2 id="dlg-intern-t">Data Engineer Intern</h2>
+        <p class="dlg__sub">Munich Re, Toronto. Sept to Dec 2022</p>
+      </div>
+      <form method="dialog"><button class="btn btn--sm" autofocus>Close</button></form>
+    </div>
+    <ul class="points">
+      <li>Designed, developed and deployed a microservices-based NLP application that summarized patient health conditions, using Python, Docker, Kubernetes and an Azure DevOps CI/CD pipeline.</li>
+      <li>Built backend services to ingest documents from Azure Storage Accounts and publish events to Azure Event Hubs, automating end-to-end processing workflows.</li>
+      <li>Developed Python test scripts for quality assurance and implemented Datadog logging to improve observability.</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-sunlife" aria-labelledby="dlg-sunlife-t">
+  <div class="dlg__body">
+    <div class="dlg__head">
+      <div>
+        <h2 id="dlg-sunlife-t">Innovation Application Developer Intern</h2>
+        <p class="dlg__sub">Sun Life Financial, Toronto. Jan to Apr 2022</p>
+      </div>
+      <form method="dialog"><button class="btn btn--sm" autofocus>Close</button></form>
+    </div>
+    <ul class="points">
+      <li>Developed 3 NLP topic models in Python to analyze 2,000+ documents and support sentiment analysis of call-centre interactions, using NLTK, scikit-learn, Gensim, spaCy and NumPy.</li>
+      <li>Collaborated in an Agile team to develop a multi-factor authentication voice skill using Node.js, Alexa Skills Kit, AWS S3 and the Twilio API.</li>
+      <li>Designed and developed 3 web applications with Node.js and React to address business-user requirements.</li>
+    </ul>
+  </div>
+</dialog>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
