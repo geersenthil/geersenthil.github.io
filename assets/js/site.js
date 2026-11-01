@@ -24,6 +24,21 @@
     });
   });
 
+  // Scroll progress bar in the header.
+  var ticking = false;
+  function updateProgress() {
+    var max = root.scrollHeight - root.clientHeight;
+    root.style.setProperty('--scroll', max > 0 ? root.scrollTop / max : 0);
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(updateProgress);
+  }, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
   if (!hasIO) return;
 
   // Highlights: count up once when first seen.
@@ -54,6 +69,14 @@
   // Scroll reveals
   if (!reduced) {
     root.classList.add('reveal-ready');
+    document.querySelectorAll('.stats, .principles').forEach(function (group) {
+      group.querySelectorAll('.reveal').forEach(function (el, i) {
+        el.style.setProperty('--rd', i * 80 + 'ms');
+      });
+    });
+    document.querySelectorAll('.tags li').forEach(function (el, i) {
+      el.style.setProperty('--rd', 150 + i * 50 + 'ms');
+    });
     var revealer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
