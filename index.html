@@ -11,7 +11,7 @@
 <meta property="og:image" content="https://geersenthil.github.io/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFFFFF">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23172033'/%3E%3Crect x='9' y='9' width='14' height='14' rx='2' fill='%238F2D3F'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2314284A'/%3E%3Crect x='9' y='9' width='14' height='14' rx='2' fill='%231F4E8C'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400..700&family=Newsreader:opsz,wght@6..72,400..600&display=swap" rel="stylesheet">
@@ -115,12 +115,14 @@
     <a class="brand" href="#top">Geerthika Senthil</a>
     <nav class="nav" aria-label="Sections">
       <a href="#ai">AI engineering</a>
-      <a href="#work">Selected work</a>
+      <a href="#work">What I've built</a>
       <a href="#path">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#interests">Beyond the code</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
+  <div class="progress" aria-hidden="true"></div>
 </header>
 
 <main class="wrap" id="top">
@@ -132,10 +134,9 @@
         <p class="role">Senior Software Engineer, Munich Re</p>
       </div>
       <p class="lede" style="--i:2">I build production AI systems and the backend services they depend on. I owned Munich Re's first production OpenAI integration, which processed more than 10,000 documents a day, and built an agentic workflow, with human review, that keeps service contracts in sync.</p>
-      <p class="hero__meta" style="--i:3">Based in Toronto. BASc in Management Engineering from the University of Waterloo.</p>
+      <p class="hero__meta" style="--i:3">Based in Toronto. BASc in Honors Management Engineering, with Distinction, from the University of Waterloo.</p>
       <div class="actions" style="--i:4">
-        <a class="btn btn--solid" href="mailto:geerthika.senthil@gmail.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/Geerthika-Senthil/" rel="noopener">LinkedIn</a>
+        <a class="btn btn--solid" href="https://www.linkedin.com/in/Geerthika-Senthil/" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://github.com/geersenthil" rel="noopener">GitHub</a>
       </div>
     </div>
@@ -208,28 +209,39 @@
       <p class="section__intro">How I put language models and agents into production.</p>
       <ul class="principles">
         <li class="reveal">
-          <h3>Protect the data</h3>
-          <p>De-identification is part of the integration from the first proof of concept.</p>
+          <div class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5c0 4.5-2.9 8.3-7 10-4.1-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            <h3>Protect the data</h3>
+            <p>De-identification is part of the integration from the first proof of concept.</p>
+          </div>
         </li>
         <li class="reveal">
-          <h3>Control cost and reliability</h3>
-          <p>Token-usage logging, caching, rate limiting and retries keep the service dependable at 10,000+ documents per day.</p>
+          <div class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 16a8 8 0 1 1 16 0"/><path d="M12 16l4-5"/><path d="M4 20h16"/></svg>
+            <h3>Control cost and reliability</h3>
+            <p>Token-usage logging, caching, rate limiting and retries keep the service dependable at 10,000+ documents per day.</p>
+          </div>
         </li>
         <li class="reveal">
-          <h3>Make prompts measurable</h3>
-          <p>Prompt-to-result tracking lets data science trace each result back to its prompt and iterate.</p>
+          <div class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4v16h16"/><path d="M8 16v-4"/><path d="M12 16V8"/><path d="M16 16v-6"/></svg>
+            <h3>Make prompts measurable</h3>
+            <p>Prompt-to-result tracking lets data science trace each result back to its prompt and iterate.</p>
+          </div>
         </li>
         <li class="reveal">
-          <h3>Keep people in the loop</h3>
-          <p>The agentic contract-testing workflow routes flagged failures to a person for review.</p>
+          <div class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M5 21c1-4 3.5-6 7-6s6 2 7 6"/></svg>
+            <h3>Keep people in the loop</h3>
+            <p>The agentic contract-testing workflow routes flagged failures to a person for review.</p>
+          </div>
         </li>
       </ul>
-      <p class="principles-link"><button class="link-btn" type="button" data-open="dlg-openai">See the OpenAI integration walkthrough</button></p>
     </div>
   </section>
 
   <section class="section" id="work" aria-labelledby="work-h">
-    <h2 id="work-h">Selected work</h2>
+    <h2 id="work-h">What I've built</h2>
     <div>
       <p class="section__intro">Four projects from my time at Munich Re. Each opens a walkthrough with a diagram and the full details.</p>
 
@@ -341,7 +353,7 @@
     <dl class="rows">
       <div class="reveal">
         <dt>AI and machine learning</dt>
-        <dd>Azure OpenAI, OpenAI integrations, agentic workflows, Claude Code, NLP, NLTK, scikit-learn, Gensim, spaCy, NumPy</dd>
+        <dd>Azure OpenAI, agentic workflows, Claude Code, NLP, NLTK, scikit-learn, Gensim, spaCy, NumPy</dd>
       </div>
       <div class="reveal">
         <dt>Languages and frameworks</dt>
@@ -356,28 +368,71 @@
 
   <section class="section" id="education" aria-labelledby="education-h">
     <h2 id="education-h">Education</h2>
-    <dl class="rows">
-      <div class="reveal">
-        <dt>University of Waterloo</dt>
-        <dd>Bachelor of Applied Science in Management Engineering, with the computing option. September 2018 to April 2023.</dd>
-      </div>
-      <div class="reveal">
-        <dt>Relevant courses</dt>
-        <dd>Algorithms and Data Structures, Data Mining, Databases and Software Design, Advanced Machine Learning, Principles of Software Engineering, Human Computer Interaction</dd>
-      </div>
-      <div class="reveal">
-        <dt>Certificates</dt>
-        <dd>DevOps, York University. Big Data Management Systems and Tools, University of Waterloo.</dd>
-      </div>
-    </dl>
+    <ol class="path path--plain">
+      <li class="reveal">
+        <div>
+          <h3>Bachelor of Applied Science, Honors Management Engineering, Computing Option</h3>
+          <p class="where">University of Waterloo, 2018 to 2023</p>
+          <p class="what">Graduated with Distinction.</p>
+          <p class="tags__label">Relevant courses</p>
+          <ul class="tags">
+            <li>Algorithms and Data Structures</li>
+            <li>Data Mining</li>
+            <li>Databases and Software Design</li>
+            <li>Advanced Machine Learning</li>
+            <li>Principles of Software Engineering</li>
+            <li>Human Computer Interaction</li>
+          </ul>
+        </div>
+      </li>
+      <li class="reveal">
+        <p class="tags__label">Certificates</p>
+        <div>
+          <div class="cert">
+            <h3>Certificate of DevOps</h3>
+            <p class="where">York University, Jan to July 2026</p>
+          </div>
+          <div class="cert">
+            <h3>Certificate of Big Data Management Systems and Tools</h3>
+            <p class="where">University of Waterloo, May to Aug 2025</p>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" id="interests" aria-labelledby="interests-h">
+    <h2 id="interests-h">Beyond the code</h2>
+    <ul class="principles principles--three">
+      <li class="reveal">
+        <div class="card">
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>
+          <h3>Creative at heart</h3>
+          <p>I'm a creative person first, and it shapes how I approach my work.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <div class="card">
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2 0-1.4 1-2 2.2-2H18a3 3 0 0 0 3-3c0-6-4-11-9-11z"/><circle cx="8" cy="11" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16" cy="11" r="1"/></svg>
+          <h3>Art</h3>
+          <p>I love art, and that same instinct shows up in my engineering.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <div class="card">
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></svg>
+          <h3>Designing solutions</h3>
+          <p>I enjoy designing a solution as much as building it.</p>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <section class="section" id="contact" aria-labelledby="contact-h">
     <h2 id="contact-h">Contact</h2>
     <div>
-      <p>For senior engineering roles or conversations about production AI, reach me by email or on LinkedIn.</p>
+      <p>For senior engineering roles or conversations about production AI, reach me on LinkedIn.</p>
       <ul class="contact-links">
-        <li><a href="mailto:geerthika.senthil@gmail.com">geerthika.senthil@gmail.com</a></li>
         <li><a href="https://www.linkedin.com/in/Geerthika-Senthil/" rel="noopener">LinkedIn</a></li>
         <li><a href="https://github.com/geersenthil" rel="noopener">GitHub</a></li>
       </ul>
@@ -385,10 +440,6 @@
   </section>
 
 </main>
-
-<footer class="wrap foot">
-  <p>Geerthika Senthil, Toronto</p>
-</footer>
 
 <!-- Popups -->
 <dialog class="dlg" id="dlg-ordering" aria-labelledby="dlg-ordering-t">
