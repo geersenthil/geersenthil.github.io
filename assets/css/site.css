@@ -391,7 +391,34 @@ html:not(.js) [data-open] { display: none; }
   color: var(--muted);
 }
 
-/* Definition rows: skills, education */
+/* Education */
+.tags__label {
+  margin-top: 16px;
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--panel);
+  font-size: 0.92rem;
+}
+
+.path--plain > li > .tags__label { margin-top: 0; }
+
+.cert + .cert { margin-top: 14px; }
+
+/* Definition rows: skills */
 .rows { margin: 0; }
 
 .rows > div {
@@ -433,14 +460,7 @@ html:not(.js) [data-open] { display: none; }
 
 .contact-links a:hover { color: var(--ink); }
 
-.foot {
-  margin-top: 72px;
-  padding-top: 22px;
-  padding-bottom: 48px;
-  border-top: 1px solid var(--rule);
-  color: var(--muted);
-  font-size: 0.92rem;
-}
+.section:last-child { margin-bottom: 72px; }
 
 /* Popups */
 .dlg {
@@ -681,6 +701,8 @@ html:not(.js) [data-open] { display: none; }
 
   .path > li,
   .rows > div { grid-template-columns: 10.5rem minmax(0, 1fr); }
+
+  .path--plain > li { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (min-width: 900px) {
